@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    /* background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%); */
+    background: url("pexels-pixabay-461940.jpg") no-repeat center center;
+    background-size: auto;
+    height: 100vh;
+}
+
+/* ------- Barra de navegação ------- */
+nav {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+    opacity: 0.8;
+    padding: auto;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+  nav a:hover {
+    opacity: 0.6;
+  }
+  header nav li {
+    list-style: none;
+  }
+  .logo {
+    margin-top: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    opacity: 90;
+    padding-left: 18px;
+    display: flex;
+  }
+  .lio_kai {
+    margin-top: 7px;
+  }
+  .logo img {
+    width: 55px;
+    height: 55px;
+  }
+  .logo:hover {
+    color: #ffffff;
+    padding-left: auto;
+    transform: scale(1.1);
+  }
+  nav img {
+    height: 34px;
+    width: 36px;
+    display: flex;
+}
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 0px;
+    margin: 35px;
+}
+.titulo h2 {
+    color: #fff;
+    font-weight: 500;
+}
+.form {
+    grid-area: form;
+}
+.info {
+    grid-area: info;
+}
+.map {
+    grid-area: map;
+}
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+.caixa {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+.contact h3 {
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* ------- Formulário ------- */
+.fomrBox {
+    position: relative;
+    width: 100%;
+}
+.fomrBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+.inputBox {
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 10px;
+    width: 100%;
+} */
+.fomrBox .row100 .inputBox {
+    width: 100%;
+}
+.inputBox span {
+    color: #ff578b;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"] {
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder {
+    color: #999;
+}
+
+/* ------- Caixa de Informações ------- */
+.info {
+    background: #0e3959;
+}
+.info h3 {
+    color: #fff;
+}
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color:  #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.sci li a:hover {
+    color: #fff;
+}
+
+ /* ------- Mapa ------- */
+ .map {
+    padding: 0;
+ }
+ .map iframe {
+    width: 100%;
+    height: 100%;
+ }
+
+ /* ------- Responsive ------- */
+ @media (max-width: 991px) {
+    nav {
+        height: 6vh;
+    }
+    .contactUs {
+        padding: 20px;
+    }
+    .caixa {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "form"
+            "info"
+            "map";
+    }
+    .map {
+        min-height: 300px;
+    }
+    .fomrBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox {
+        width: 100%;
+    }
+    .contact {
+        padding: 30px;
+    }
+    .map {
+        min-height: 300px;
+        padding: 0;
+    }
+ }

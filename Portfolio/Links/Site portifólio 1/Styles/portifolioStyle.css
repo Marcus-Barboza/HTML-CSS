@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    height: 900px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.subContainer {
+    border-right: solid #3C5973 2px;
+}
+
+.foto {
+    border-radius: 100%;
+    height: 310px;
+    width: 310px;
+    margin: 40px;
+}
+.name {
+    color: #f7f7f7;
+    margin: 40px;
+    padding: 8px;
+    font-size: 42px;
+    line-height: 48px;
+}
+.intro {
+    color: #f7f7f7;
+    margin: 40px;
+    padding: 8px;
+    font-size: medium;
+    line-height: 24px;
+}

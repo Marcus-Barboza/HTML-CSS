@@ -1,0 +1,125 @@
+/* -------- Definições de containers do bloco 1 - começo -------- */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    height: 750px;
+}
+.subContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.subContainerName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 550px;
+    border-bottom: solid #3C5973 1px;
+    flex-wrap: wrap;
+}
+.subContainerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    width: 550px;
+    flex-wrap: wrap;
+}
+.subContainer2 {
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    width: 450px;
+    flex-wrap: wrap;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    height: 99px;
+}
+/* -------- Definições de containers do bloco 1 - fim -------- */
+
+
+.name {
+    color: #f7f7f7; 
+    font-size: 48px;
+    margin: 0;
+    padding-top: 30px;
+}
+.name2 {
+    color: #f7f7f7;
+    font-size: 22px;
+    margin: 0;
+}
+.subContainerInfo p {
+    color: #f7f7f7;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 5px;
+}
+.downloadButton {
+    width: 300px;
+    height: 48px;
+    background-color: #e7813d;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px -2px;
+}
+.foto {
+    height: 580px;
+}
+
+.bloco2 {
+    background: rgb(12,17,38);
+    background: linear-gradient(0deg, rgba(12,17,38,1) 3%, rgba(60,89,115,1) 97%);
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.formatacaoBloco2 {
+    width: 1000px;
+}
+
+.experiencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-bottom: solid #3C5973 2px;
+    color: #f7f7f7;
+}
+.experienciasTexto {
+    font-size: 48px;
+    margin: 0;
+}
+.experienciasSubTexto {
+    display: flex;
+    align-items: center;
+}
+
+.area,
+.descricao {
+    font-size: 20px;
+}
+.area{
+    width: 200px;
+    color: #e7813d;
+}
+.area2 {
+    width: 200px;
+    color: #f7f7f7;
+}
+.descricao {
+    width: 800px;
+    color: #f7f7f7;
+}
+
+.cor {
+    color: #e7813d;
+    font-size: 20px;
+}
